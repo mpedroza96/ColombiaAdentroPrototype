@@ -1,0 +1,89 @@
+.bg{
+    background-image: url('../../assets/3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bg > h6{
+    background-color: black;
+    display: inline-block;
+    padding: 15px;
+    max-width: 70%;
+    margin: 0 auto;
+    opacity: 0.7;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .list{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: black;
+    opacity: 0.7;
+    background-size: auto;
+    min-height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .conoce{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: black;
+    opacity: 0.7;
+    background-size: auto;
+    min-height: 100px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .conoce > h6{
+      margin: 0 auto;
+      font-size: 2rem;
+      cursor: pointer;
+  }
+  
+  .list > h6, .list > ol > li, .conoce > h6{
+    color: white;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  .emailForm{
+    max-width: 90%;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .emailForm > p{
+    font-size: .8rem;
+  }
+  
+  .gracias{
+    background-color: green;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,34 @@
+<div class="panel panel-default">
+    <div>
+        <div class="border margin">
+            <p class="h3 p-3">{{destino.nombre}}</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="thumb">
+                                <img class="img-fluid" src="{{destino.imagen}}"/>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+        <div class="col">
+          <p class="">Ciudad: {{destino.ciudad}}</p>
+          <p class="">Precio: ${{destino.precio}}</p>
+          <p class="">Calificacion: {{destino.calificacion}}</p>
+        </div>
+    </div>
+    <p class="">Historia: <br>{{destino.historia}}</p>
+    <p class="">Direcciones:<br>{{destino.direcciones}}</p>
+</div>
+</div>
+</div>
+<h6>Imagenes:</h6>
+<div class="d-flex justify-content-center">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of imagenes"class="carr">
+          <img src={{image}} alt="Random slide" id="img"class="imag img-fluid">
+        </ng-template>
+  </ngb-carousel>
+</div>

@@ -1,0 +1,16 @@
+<div class="">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Buscar">
+    </div>
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+            <div class="card border-dark mb-3"  style="cursor: pointer;" *ngFor = "let destino of destinos | filter:searchText" routerLink="/destinos/{{destino._id}}">
+                <img class="card-img-top" src='{{destino.imagen}}' alt="{{destino.nonbre}}" />
+                <div class="card-body">
+                  <h6 class="card-title">{{destino.nombre}}</h6>
+                  <p>Ciudad: {{destino.ciudad}}</p>
+                  <p>${{destino.precio}}</p>
+                  <p>Calificacion: {{destino.calificacion}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
